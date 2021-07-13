@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+        <title>Gregory's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+       :root {
+           --main-white: rgb(255, 235, 204);
+           --main-grey: rgb(153, 132, 99);
+           --main-blue: rgb(74, 110, 134);
+       }
+       * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;    
+        }
+        html {
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+            background-color: var(--main-white);
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.25;
+            color: black;
+        }
+        h1, h2 {
+            font-size: 2.1rem;
+            font-weight: 645;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 625;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            margin-right: 0 1rem;
+        }
+        a {
+            text-decoration: none;
+            color: seashell;
+        }
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--main-grey);
+            box-shadow: 0 2px 0 rgba(0,0,0, 0.35);
+            z-index: 10;
+            
+        }
+        .nav-list {
+            display: flex;
+            margin-right: 2rem;
+            color: seashell;
+        }
+        .nav-list a {
+            display: block;
+            font-size: 1.2rem;
+            padding: 1.2rem;
+        }
+        .welcome-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .welcome-section > p {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        .projects-section {
+            text-align: center;
+            padding: 5.75rem 2rem;
+        }
+        @media (max-width: 650px){
+            .projects-section {
+                padding: 5rem 1rem;
+            }
+        }
+        .projects-section-header {
+            max-width: 625px;
+            margin: 0 auto 6rem auto;
+            border-bottom: .25rem solid var(--main-grey);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit), minmax(300px, 1);
+            grid-gap: 3.5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+            margin-bottom: 5.95rem;
+        }
+        .project {
+            background-color: var(--main-blue);
+            box-shadow: 1px 1px 4px rgba(0,0,0, 0.56);
+            color:seashell;
+        }
+        .project:hover {
+            background-color: var(--main-grey);
+        }
+        .project-tile {
+            padding: 1rem .5rem;
+        }
+        .project-img {
+            height: 75%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 1.95rem;
+        }
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 80vh;
+            padding: 0 2rem;
+            background-color: var(--main-grey);
+        }
+        .contacts-header > h2 {
+            font-size: 3.5rem;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            background-color: var(--main-blue);
+        }
+        .contact-links {
+            text-shadow: 2px 2px 1.5px rgba(0,0,0, 0.35) ;
+        }
+        .contact-details:hover {
+            transform: translateY(-3px);
+        }
+        footer {
+            font-weight: 250;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2rem;
+            background-color: var(--main-blue);
+            border-top: 3px solid var(--main-grey);
+        }
+
+
+</style>
+
+</head>
+    <body>
+        <!-- Start Navbar -->
+    
+        <nav id="navbar"
+         class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects-section">Porfolio</a>
+            </li>
+            <li>
+                <a href="#contact-section">Contact</a>
+            </li>
+        </ul>
+        </nav>
+             <!-- End Navbar -->
+        
+             <!-- Welcome Section -->
+    
+        <section id="welcome-section" class="welcome-section">
+        <h1>Gregory MacKinnon</h1>
+        <p><i>A Web Developer</i></p>
+        </section>
+        
+        <!-- End Welcome Section -->
+        
+        <!-- Start Projects Section -->
+        
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">Examples of my work</h2>
+        
+        <div class="projects-grid">
+            <img class="project-image" src="" alt="Project">
+       <p> <a href="https://codepen.io/GMacKinnon30/full/poNbNOm" target="_blank" class=" project project-tile">Product Landing Page</a></p>
+        </div>
+        <div class="projects-grid">
+            <img class="project-image" src="https://drive.google.com/file/d/1K-tZc9KeRrTIIOPtycBXzKlxIfuhj-uN/view?usp=sharing" alt="Project">
+            <p> <a href="https://codepen.io/GMacKinnon30/full/dyWYzGO" target="_blank" class="project project-tile">Survey Form</a></p>
+        </div>
+        <div class="projects-grid">
+            <img class="project-image" src="" alt="Project">
+            <p><a href="https://codepen.io/GMacKinnon30/full/KKaVzMa" target="_blank" class="project project-tile">Technical Documentation</a></p>
+        </div>
+        <div class="projects-grid">
+            <img class="project-image" src="https://cdn.shoplightspeed.com/shops/627543/files/20936543/image.jpg" alt="Project">
+            <p><a class=" project project-tile" href="https://codepen.io/GMacKinnon30/full/dyNZNJb" target="_blank">Tribute Page</a></p>
+        </div>
+        </section>
+        
+        <!-- End Projects Section -->
+        
+        <!-- Start Contact Section -->
+        
+        <section id="contact-section" class="contacts-section">
+        <div class="contacts-header">   
+        <h2>Interested?</h2>
+            
+            </div>
+            <div class="contact-links">
+                <a href="mailto:greg.mackinnon31@protonmail.com" target="_blank" class="btn contact-details"><i class="fas fa-at fa-1x"></i></a>
+                <a href="https://www.freecodecamp.org/fcc096fa72e-db18-4223-b03e-c95de7799f61" target="_blank" class="btn contact-details" id="profile-link">
+                    <i class="fab fa-free-code-camp"></i></a>
+                    <a class="btn contact-details" href="+2089917730" target="_blank">
+                        <i class="fas fa-mobile-alt"></i></a>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+        <footer>
+            <p>&copy; Gregory MacKinnon 2021</p>
+        </footer>
+    </body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</html>
